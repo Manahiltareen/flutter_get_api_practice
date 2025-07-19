@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:get_reviews/View/reviews_screen.dart';
+import 'package:get_reviews/View/Home_Screen/home_screen.dart';
+import 'package:get_reviews/View/Review_screen/reviews_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -32,7 +33,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: ReviewScreen(),
+      home: HomeScreen(),
     );
   }
 }

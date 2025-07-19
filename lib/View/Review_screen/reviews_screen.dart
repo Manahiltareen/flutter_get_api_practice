@@ -3,7 +3,7 @@ import 'package:get/get.dart';
 import 'package:get_reviews/Constant/Controller/api_getx_controller.dart';
 
 import 'package:get_reviews/Model/reviews_model.dart';
-import 'package:get_reviews/View/review_card_widget.dart';
+import 'package:get_reviews/View/Review_screen/review_card_widget.dart';
 
 class ReviewScreen extends StatelessWidget {
   final ReviewController controller = Get.put(ReviewController());

@@ -3,7 +3,7 @@
 
 import 'package:get/get.dart';
 import 'package:get_reviews/Model/reviews_model.dart';
-import 'package:get_reviews/Repositories/review_repository.dart';
+import 'package:get_reviews/Services/Repositories/review_repository.dart';
 
 
 class ReviewController extends GetxController{
