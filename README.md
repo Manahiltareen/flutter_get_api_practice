@@ -1,16 +1,39 @@
-# get_reviews
+#   GET API
+# 📡 Flutter GET API Practice Project
 
-A new Flutter project.
+This Flutter project is built to practice and demonstrate various **GET API integrations** using clean, minimal UI and well-structured code.
 
-## Getting Started
+## 📁 Project Structure
 
-This project is a starting point for a Flutter application.
+get_api_practice_project/
+│
+├── main.dart # Entry point
+├── home_screen.dart # Navigation to all API examples
+├── apis/ # Contains different GET API practice files
+│ ├── api1_simple_user_list.dart
+│ ├── api2_banner_list.dart
+│ ├── api3_product_details.dart
+│ └── ... more files
+├── widgets/ # Reusable widgets
+└── README.md
 
-A few resources to get you started if this is your first Flutter project:
+---
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## 📌 APIs Covered
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+| No. | API Name                | File Name                      | Description                     |
+|-----|-------------------------|--------------------------------|---------------------------------|
+| 1   | Welcome Offer Banner    | `api2_banner_list.dart`        | Shows banners using GET API     |
+| 2   | Product Details         | `api3_product_details.dart`    | Gets and displays product info  |
+| 3   | User List               | `api1_simple_user_list.dart`   | Displays a list of users        |
+| ... | ...                     | ...                            | ...                             |
+
+> ✨ i will add more APIs as i learn
+
+---
+
+## 🚀 How to Run
+
+1. Clone this repo:
+   ```bash
+   git clone https://github.com/Manahiltareen/get_reviews.git
