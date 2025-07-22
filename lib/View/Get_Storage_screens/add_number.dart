@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:get_reviews/Services/get_storage/get_storage.dart';
 import 'package:get_reviews/View/Get_Storage_screens/FetchDataScreen.dart';
+import 'package:get_reviews/View/Get_Storage_screens/add_email.dart';
 import 'package:get_reviews/View/Get_Storage_screens/widget/CustomButton.dart';
 import 'package:get_reviews/View/Get_Storage_screens/widget/Custom_textformfield.dart';
 class AddNumber extends StatefulWidget {
@@ -18,6 +19,14 @@ class _AddNumberState extends State<AddNumber> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        leading: IconButton( icon: Icon(Icons.arrow_back), onPressed:(){
+          Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => AddEmail()),
+          );
+        } ,),
+      ),
       body:Form(
         key: _formKey,
         child: Column(

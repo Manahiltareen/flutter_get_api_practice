@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
 import 'package:get_reviews/Services/get_storage/get_storage.dart';
+import 'package:get_reviews/View/Get_Storage_screens/add_name.dart';
 import 'package:get_reviews/View/Get_Storage_screens/add_number.dart';
 import 'package:get_reviews/View/Get_Storage_screens/widget/CustomButton.dart';
 import 'package:get_reviews/View/Get_Storage_screens/widget/Custom_textformfield.dart';
@@ -19,6 +20,14 @@ class _AddEmailState extends State<AddEmail> {
   @override
   Widget build(BuildContext context) {
     return  Scaffold(
+      appBar: AppBar(
+        leading: IconButton( icon: Icon(Icons.arrow_back), onPressed:(){
+          Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => AddName()),
+          );
+        } ,),
+      ),
       body:Form(
         key: _formKey,
         child: Column(

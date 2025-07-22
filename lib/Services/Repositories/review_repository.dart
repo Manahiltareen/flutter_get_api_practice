@@ -1,5 +1,6 @@
 
 import 'package:dio/dio.dart';
+import 'package:get_reviews/Constant/app_contansts/app_constants.dart';
 import 'package:get_reviews/Model/reviews_model.dart';
 
 class ReviewsRepository {
@@ -7,7 +8,7 @@ class ReviewsRepository {
   Future<List< ReviewsModel>> fetchReviews ()async{
     try{
        final response = await _dio.request(
-         'https://rapiditadmin.mtai.live/api/home/reviews',
+         '${AppConstanta.baseUrl}${AppConstanta.reviews}',
              options: Options(method: 'Get'),
        );
        if( response.statusCode == 200){

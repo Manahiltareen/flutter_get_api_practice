@@ -1,6 +1,7 @@
 
 
 import 'package:dio/dio.dart';
+import 'package:get_reviews/Constant/app_contansts/app_constants.dart';
 import 'package:get_reviews/Model/Banners_model.dart';
 
 
@@ -10,7 +11,7 @@ class BannerRepository {
   Future<List<BannerModel>> fetchBanners() async {
     try {
       final response = await _dio.get(
-        'https://rapiditadmin.mtai.live/api/home/banners',
+        '${AppConstanta.baseUrl}${AppConstanta.banners}',
       );
 
       if (response.statusCode == 200) {
