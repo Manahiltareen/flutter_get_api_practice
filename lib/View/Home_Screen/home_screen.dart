@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get_reviews/View/Banners_screen/Banners_screen.dart';
+import 'package:get_reviews/View/Get_Storage_screens/add_name.dart';
+import 'package:get_reviews/View/Get_Storage_screens/add_number.dart';
+import 'package:get_reviews/View/Get_Storage_screens/mainScreen.dart';
 import 'package:get_reviews/View/Review_screen/reviews_screen.dart';
 
 
@@ -48,10 +51,10 @@ class HomeScreen extends StatelessWidget {
               context,
               label: 'Get Storage Example',
               onPressed: () {
-                // Navigator.push(
-                //   context,
-                //   MaterialPageRoute(builder: (_) => GetStorageScreen()),
-                // );
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (_) => GetStorageScreen()),
+                );
               },
               color: Colors.indigo,
             ),

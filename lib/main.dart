@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:get_reviews/View/Get_Storage_screens/FetchDataScreen.dart';
 import 'package:get_reviews/View/Home_Screen/home_screen.dart';
 import 'package:get_reviews/View/Review_screen/reviews_screen.dart';
+import 'package:get_reviews/sir_get_storage_code.dart';
 
 void main() {
   runApp(const MyApp());
@@ -33,7 +35,9 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: HomeScreen(),
+      home:
+      // FetchDataScreen(),
+      HomeScreen(),
     );
   }
 }
