@@ -4,6 +4,7 @@ import 'package:get_reviews/View/Get_Storage_screens/add_name.dart';
 import 'package:get_reviews/View/Get_Storage_screens/add_number.dart';
 import 'package:get_reviews/View/Get_Storage_screens/mainScreen.dart';
 import 'package:get_reviews/View/Review_screen/reviews_screen.dart';
+import 'package:get_reviews/View/post_api/post_number_screen.dart';
 
 
 class HomeScreen extends StatelessWidget {
@@ -55,8 +56,22 @@ class HomeScreen extends StatelessWidget {
                   context,
                   MaterialPageRoute(builder: (_) => GetStorageScreen()),
                 );
+
               },
               color: Colors.indigo,
+            ),
+            const SizedBox(height: 20),
+            _buildButton(
+              context,
+              label: 'Post Api',
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (_) => LoginPage()),
+                );
+
+              },
+              color: Colors.lightGreen,
             ),
           ],
         ),
